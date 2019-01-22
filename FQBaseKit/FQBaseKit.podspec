@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint FQBaseKit.podspec' to ensure this is a
+#  Be sure to run 'pod spec lint FQBaseKit.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC FQBaseKit a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,QuartzCore.
-                   DESC
+  s.description  = " FQBaseKit a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,QuartzCore "
 
   s.homepage     = "https://github.com/fangqiu1991/FQBaseKit.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -38,8 +37,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,9 +51,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "fangqiu" => "18850221067@163.com" }
-  # Or just: s.author    = "fangqiu"
-  # s.authors            = { "fangqiu" => "18850221067@163.com" }
+    s.author             = { "fangqiu1991" => "519757546@qq.com" }
+  # Or just: s.author    = "fangqiu1991"
+  # s.authors            = { "fangqiu1991" => "519757546@qq.com" }
   # s.social_media_url   = "https://github.com/fangqiu1991/FQBaseKit.git"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,8 +62,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "8.0"
+   s.platform     = :ios
+   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "8.0"
@@ -90,10 +89,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "FQBaseKit" , "FQBaseKit/FQBaseFoundation/*.{h,m}", "FQBaseKit/FQBaseHelper/*.{h,m}","FQBaseKit/FQBaseQuartzCore/*.{h,m}","FQBaseKit/FQBaseTool/*.{h,m}","FQBaseKit/FQBaseUIKit/*.{h,m}","FQBaseKit/FQBaseUtil/*.{h,m}","FQBaseKit/**/*.{h,m}"
 
-  # s.public_header_files = "Classes/**/*.h"
+  # s.public_header_files = "FQBaseKit/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -118,6 +116,7 @@ Pod::Spec.new do |s|
 
   # s.framework  = "UIKit"
   # s.frameworks = "UIKit", "Foundation"
+
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

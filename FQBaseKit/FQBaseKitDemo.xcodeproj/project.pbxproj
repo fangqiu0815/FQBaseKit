@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F0166621F6B60600BEDF3C /* NSArray+FQErrorHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0163E21F6B60600BEDF3C /* NSArray+FQErrorHandle.m */; };
+		04F0166721F6B60600BEDF3C /* NSBundle+FQAppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0164021F6B60600BEDF3C /* NSBundle+FQAppIcon.m */; };
+		04F0166821F6B60600BEDF3C /* NSDictionary+FQSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0164221F6B60600BEDF3C /* NSDictionary+FQSafeAccess.m */; };
+		04F0166921F6B60600BEDF3C /* NSString+FQStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0164421F6B60600BEDF3C /* NSString+FQStringCategory.m */; };
+		04F0166A21F6B60600BEDF3C /* FQBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0164B21F6B60600BEDF3C /* FQBaseTool.m */; };
+		04F0166B21F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0164F21F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonBadge.m */; };
+		04F0166C21F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0165121F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.m */; };
+		04F0166D21F6B60600BEDF3C /* UIView+FQConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0165321F6B60600BEDF3C /* UIView+FQConstraints.m */; };
+		04F0166E21F6B60600BEDF3C /* UIView+FQFrameCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0165521F6B60600BEDF3C /* UIView+FQFrameCategory.m */; };
+		04F0166F21F6B60600BEDF3C /* UIView+FQToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0165721F6B60600BEDF3C /* UIView+FQToast.m */; };
+		04F0167021F6B60600BEDF3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0165C21F6B60600BEDF3C /* AppDelegate.m */; };
+		04F0167121F6B60600BEDF3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F0165D21F6B60600BEDF3C /* Assets.xcassets */; };
+		04F0167221F6B60600BEDF3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F0165E21F6B60600BEDF3C /* LaunchScreen.storyboard */; };
+		04F0167321F6B60600BEDF3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F0166021F6B60600BEDF3C /* Main.storyboard */; };
+		04F0167421F6B60600BEDF3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F0166221F6B60600BEDF3C /* Info.plist */; };
+		04F0167521F6B60600BEDF3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0166321F6B60600BEDF3C /* main.m */; };
+		04F0167621F6B60600BEDF3C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0166521F6B60600BEDF3C /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		042E36EE21EF0B06002A5814 /* FQBaseKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FQBaseKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F0163C21F6B60600BEDF3C /* FQBaseFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQBaseFoundation.h; sourceTree = "<group>"; };
+		04F0163D21F6B60600BEDF3C /* NSArray+FQErrorHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FQErrorHandle.h"; sourceTree = "<group>"; };
+		04F0163E21F6B60600BEDF3C /* NSArray+FQErrorHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FQErrorHandle.m"; sourceTree = "<group>"; };
+		04F0163F21F6B60600BEDF3C /* NSBundle+FQAppIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+FQAppIcon.h"; sourceTree = "<group>"; };
+		04F0164021F6B60600BEDF3C /* NSBundle+FQAppIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+FQAppIcon.m"; sourceTree = "<group>"; };
+		04F0164121F6B60600BEDF3C /* NSDictionary+FQSafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FQSafeAccess.h"; sourceTree = "<group>"; };
+		04F0164221F6B60600BEDF3C /* NSDictionary+FQSafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FQSafeAccess.m"; sourceTree = "<group>"; };
+		04F0164321F6B60600BEDF3C /* NSString+FQStringCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FQStringCategory.h"; sourceTree = "<group>"; };
+		04F0164421F6B60600BEDF3C /* NSString+FQStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FQStringCategory.m"; sourceTree = "<group>"; };
+		04F0164521F6B60600BEDF3C /* FQBaseHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQBaseHeader.h; sourceTree = "<group>"; };
+		04F0164821F6B60600BEDF3C /* FQBaseQuartzCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQBaseQuartzCore.h; sourceTree = "<group>"; };
+		04F0164A21F6B60600BEDF3C /* FQBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQBaseTool.h; sourceTree = "<group>"; };
+		04F0164B21F6B60600BEDF3C /* FQBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQBaseTool.m; sourceTree = "<group>"; };
+		04F0164D21F6B60600BEDF3C /* FQBaseUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQBaseUIKit.h; sourceTree = "<group>"; };
+		04F0164E21F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FQBarButtonBadge.h"; sourceTree = "<group>"; };
+		04F0164F21F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FQBarButtonBadge.m"; sourceTree = "<group>"; };
+		04F0165021F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FQBarButtonItemCategory.h"; sourceTree = "<group>"; };
+		04F0165121F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FQBarButtonItemCategory.m"; sourceTree = "<group>"; };
+		04F0165221F6B60600BEDF3C /* UIView+FQConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FQConstraints.h"; sourceTree = "<group>"; };
+		04F0165321F6B60600BEDF3C /* UIView+FQConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FQConstraints.m"; sourceTree = "<group>"; };
+		04F0165421F6B60600BEDF3C /* UIView+FQFrameCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FQFrameCategory.h"; sourceTree = "<group>"; };
+		04F0165521F6B60600BEDF3C /* UIView+FQFrameCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FQFrameCategory.m"; sourceTree = "<group>"; };
+		04F0165621F6B60600BEDF3C /* UIView+FQToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FQToast.h"; sourceTree = "<group>"; };
+		04F0165721F6B60600BEDF3C /* UIView+FQToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FQToast.m"; sourceTree = "<group>"; };
+		04F0165921F6B60600BEDF3C /* FQBaseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQBaseUtil.h; sourceTree = "<group>"; };
+		04F0165B21F6B60600BEDF3C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04F0165C21F6B60600BEDF3C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04F0165D21F6B60600BEDF3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F0165F21F6B60600BEDF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F0166121F6B60600BEDF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F0166221F6B60600BEDF3C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F0166321F6B60600BEDF3C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04F0166421F6B60600BEDF3C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04F0166521F6B60600BEDF3C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		042E36EB21EF0B06002A5814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042E36E521EF0B06002A5814 = {
+			isa = PBXGroup;
+			children = (
+				04F0163A21F6B60600BEDF3C /* FQBaseKit */,
+				04F0165A21F6B60600BEDF3C /* FQBaseKitDemo */,
+				042E36EF21EF0B06002A5814 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		042E36EF21EF0B06002A5814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042E36EE21EF0B06002A5814 /* FQBaseKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F0163A21F6B60600BEDF3C /* FQBaseKit */ = {
+			isa = PBXGroup;
+			children = (
+				04F0163B21F6B60600BEDF3C /* FQBaseFoundation */,
+				04F0164521F6B60600BEDF3C /* FQBaseHeader.h */,
+				04F0164621F6B60600BEDF3C /* FQBaseHelper */,
+				04F0164721F6B60600BEDF3C /* FQBaseQuartzCore */,
+				04F0164921F6B60600BEDF3C /* FQBaseTool */,
+				04F0164C21F6B60600BEDF3C /* FQBaseUIKit */,
+				04F0165821F6B60600BEDF3C /* FQBaseUtil */,
+			);
+			path = FQBaseKit;
+			sourceTree = "<group>";
+		};
+		04F0163B21F6B60600BEDF3C /* FQBaseFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				04F0163C21F6B60600BEDF3C /* FQBaseFoundation.h */,
+				04F0163D21F6B60600BEDF3C /* NSArray+FQErrorHandle.h */,
+				04F0163E21F6B60600BEDF3C /* NSArray+FQErrorHandle.m */,
+				04F0163F21F6B60600BEDF3C /* NSBundle+FQAppIcon.h */,
+				04F0164021F6B60600BEDF3C /* NSBundle+FQAppIcon.m */,
+				04F0164121F6B60600BEDF3C /* NSDictionary+FQSafeAccess.h */,
+				04F0164221F6B60600BEDF3C /* NSDictionary+FQSafeAccess.m */,
+				04F0164321F6B60600BEDF3C /* NSString+FQStringCategory.h */,
+				04F0164421F6B60600BEDF3C /* NSString+FQStringCategory.m */,
+			);
+			path = FQBaseFoundation;
+			sourceTree = "<group>";
+		};
+		04F0164621F6B60600BEDF3C /* FQBaseHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FQBaseHelper;
+			sourceTree = "<group>";
+		};
+		04F0164721F6B60600BEDF3C /* FQBaseQuartzCore */ = {
+			isa = PBXGroup;
+			children = (
+				04F0164821F6B60600BEDF3C /* FQBaseQuartzCore.h */,
+			);
+			path = FQBaseQuartzCore;
+			sourceTree = "<group>";
+		};
+		04F0164921F6B60600BEDF3C /* FQBaseTool */ = {
+			isa = PBXGroup;
+			children = (
+				04F0164A21F6B60600BEDF3C /* FQBaseTool.h */,
+				04F0164B21F6B60600BEDF3C /* FQBaseTool.m */,
+			);
+			path = FQBaseTool;
+			sourceTree = "<group>";
+		};
+		04F0164C21F6B60600BEDF3C /* FQBaseUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				04F0164D21F6B60600BEDF3C /* FQBaseUIKit.h */,
+				04F0164E21F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonBadge.h */,
+				04F0164F21F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonBadge.m */,
+				04F0165021F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.h */,
+				04F0165121F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.m */,
+				04F0165221F6B60600BEDF3C /* UIView+FQConstraints.h */,
+				04F0165321F6B60600BEDF3C /* UIView+FQConstraints.m */,
+				04F0165421F6B60600BEDF3C /* UIView+FQFrameCategory.h */,
+				04F0165521F6B60600BEDF3C /* UIView+FQFrameCategory.m */,
+				04F0165621F6B60600BEDF3C /* UIView+FQToast.h */,
+				04F0165721F6B60600BEDF3C /* UIView+FQToast.m */,
+			);
+			path = FQBaseUIKit;
+			sourceTree = "<group>";
+		};
+		04F0165821F6B60600BEDF3C /* FQBaseUtil */ = {
+			isa = PBXGroup;
+			children = (
+				04F0165921F6B60600BEDF3C /* FQBaseUtil.h */,
+			);
+			path = FQBaseUtil;
+			sourceTree = "<group>";
+		};
+		04F0165A21F6B60600BEDF3C /* FQBaseKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				04F0165B21F6B60600BEDF3C /* AppDelegate.h */,
+				04F0165C21F6B60600BEDF3C /* AppDelegate.m */,
+				04F0165D21F6B60600BEDF3C /* Assets.xcassets */,
+				04F0165E21F6B60600BEDF3C /* LaunchScreen.storyboard */,
+				04F0166021F6B60600BEDF3C /* Main.storyboard */,
+				04F0166221F6B60600BEDF3C /* Info.plist */,
+				04F0166321F6B60600BEDF3C /* main.m */,
+				04F0166421F6B60600BEDF3C /* ViewController.h */,
+				04F0166521F6B60600BEDF3C /* ViewController.m */,
+			);
+			path = FQBaseKitDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		042E36ED21EF0B06002A5814 /* FQBaseKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042E370421EF0B09002A5814 /* Build configuration list for PBXNativeTarget "FQBaseKitDemo" */;
+			buildPhases = (
+				042E36EA21EF0B06002A5814 /* Sources */,
+				042E36EB21EF0B06002A5814 /* Frameworks */,
+				042E36EC21EF0B06002A5814 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FQBaseKitDemo;
+			productName = FQBaseKit;
+			productReference = 042E36EE21EF0B06002A5814 /* FQBaseKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		042E36E621EF0B06002A5814 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					042E36ED21EF0B06002A5814 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 042E36E921EF0B06002A5814 /* Build configuration list for PBXProject "FQBaseKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 042E36E521EF0B06002A5814;
+			productRefGroup = 042E36EF21EF0B06002A5814 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042E36ED21EF0B06002A5814 /* FQBaseKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		042E36EC21EF0B06002A5814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0167121F6B60600BEDF3C /* Assets.xcassets in Resources */,
+				04F0167321F6B60600BEDF3C /* Main.storyboard in Resources */,
+				04F0167221F6B60600BEDF3C /* LaunchScreen.storyboard in Resources */,
+				04F0167421F6B60600BEDF3C /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042E36EA21EF0B06002A5814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0166821F6B60600BEDF3C /* NSDictionary+FQSafeAccess.m in Sources */,
+				04F0166621F6B60600BEDF3C /* NSArray+FQErrorHandle.m in Sources */,
+				04F0166B21F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonBadge.m in Sources */,
+				04F0166721F6B60600BEDF3C /* NSBundle+FQAppIcon.m in Sources */,
+				04F0167621F6B60600BEDF3C /* ViewController.m in Sources */,
+				04F0166F21F6B60600BEDF3C /* UIView+FQToast.m in Sources */,
+				04F0166E21F6B60600BEDF3C /* UIView+FQFrameCategory.m in Sources */,
+				04F0166A21F6B60600BEDF3C /* FQBaseTool.m in Sources */,
+				04F0166D21F6B60600BEDF3C /* UIView+FQConstraints.m in Sources */,
+				04F0167521F6B60600BEDF3C /* main.m in Sources */,
+				04F0166921F6B60600BEDF3C /* NSString+FQStringCategory.m in Sources */,
+				04F0166C21F6B60600BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.m in Sources */,
+				04F0167021F6B60600BEDF3C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04F0165E21F6B60600BEDF3C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0165F21F6B60600BEDF3C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04F0166021F6B60600BEDF3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F0166121F6B60600BEDF3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		042E370221EF0B09002A5814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		042E370321EF0B09002A5814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		042E370521EF0B09002A5814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK7D8W6QJ2;
+				INFOPLIST_FILE = "$(SRCROOT)/FQBaseKitDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdyg.FQBaseKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		042E370621EF0B09002A5814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BK7D8W6QJ2;
+				INFOPLIST_FILE = "$(SRCROOT)/FQBaseKitDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdyg.FQBaseKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		042E36E921EF0B06002A5814 /* Build configuration list for PBXProject "FQBaseKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042E370221EF0B09002A5814 /* Debug */,
+				042E370321EF0B09002A5814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042E370421EF0B09002A5814 /* Build configuration list for PBXNativeTarget "FQBaseKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042E370521EF0B09002A5814 /* Debug */,
+				042E370621EF0B09002A5814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 042E36E621EF0B06002A5814 /* Project object */;
+}

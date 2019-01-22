@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FQBaseKit"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "FQBaseKit a collection of useful Objective-C Categories"
 
   # This description is used to generate tags and improve search results.
@@ -89,8 +89,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "FQBaseKit" , "FQBaseKit/FQBaseFoundation/*.{h,m}" ,"FQBaseKit/FQBaseHelper/*.{h,m}","FQBaseKit/FQBaseQuartzCore/*.{h,m}","FQBaseKit/FQBaseTool/*.{h,m}",
-"FQBaseKit/FQBaseUIKit/*.{h,m}","FQBaseKit/FQBaseUtil/*.{h,m}"
+  s.source_files  = "FQBaseKit" , "FQBaseKit/FQBaseFoundation/*" ,"FQBaseKit/FQBaseHelper/*","FQBaseKit/FQBaseQuartzCore/*","FQBaseKit/FQBaseTool/*",
+"FQBaseKit/FQBaseUIKit/*","FQBaseKit/FQBaseUtil/*"
   # s.public_header_files = "FQBaseKit/**/*.h"
 
 

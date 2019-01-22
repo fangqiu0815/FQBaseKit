@@ -14,5 +14,6 @@
 #import "FQBaseFoundation.h"
 #import "FQBaseUtil.h"
 #import "FQBaseQuartzCore.h"
+#import "FQBaseHelperHeader.h"
 
 #endif /* FQBaseHeader_h */

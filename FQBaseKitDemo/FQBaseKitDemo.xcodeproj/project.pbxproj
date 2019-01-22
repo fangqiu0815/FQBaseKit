@@ -62,6 +62,7 @@
 		04F0169321F6EF3400BEDF3C /* UIView+FQToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FQToast.h"; sourceTree = "<group>"; };
 		04F0169421F6EF3400BEDF3C /* UIView+FQToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FQToast.m"; sourceTree = "<group>"; };
 		04F0169621F6EF3400BEDF3C /* FQBaseUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQBaseUtil.h; sourceTree = "<group>"; };
+		04F016A121F6FAB900BEDF3C /* FQBaseHelperHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQBaseHelperHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +143,7 @@
 		04F0168321F6EF3400BEDF3C /* FQBaseHelper */ = {
 			isa = PBXGroup;
 			children = (
+				04F016A121F6FAB900BEDF3C /* FQBaseHelperHeader.h */,
 			);
 			path = FQBaseHelper;
 			sourceTree = "<group>";

@@ -9,5 +9,7 @@
 #ifndef FQBaseHelperHeader_h
 #define FQBaseHelperHeader_h
 
+#import "FQDeviceHelper.h"
+
 
 #endif /* FQBaseHelperHeader_h */

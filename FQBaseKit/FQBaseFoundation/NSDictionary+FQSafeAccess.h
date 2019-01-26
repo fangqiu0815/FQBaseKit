@@ -60,6 +60,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (CGRect)fq_rectForKey:(id)key;
 
+/**
+ *  @brief NSDictionary转换成JSON字符串
+ *
+ *  @return  JSON字符串
+ */
+-(NSString *)fq_JSONString;
 
 @end
 

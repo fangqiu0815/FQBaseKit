@@ -13,6 +13,8 @@
 #import "NSString+FQStringCategory.h"
 #import "NSArray+FQErrorHandle.h"
 #import "NSBundle+FQAppIcon.h"
+#import "NSHTTPCookieStorage+FQHTTPCookiesExtension.h"
+#import "NSNumber+FQNumberExtension.h"
 
 
 #endif /* FQBaseFoundation_h */

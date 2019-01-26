@@ -129,7 +129,7 @@ NSString * const FQToastPositionBottom          = @"bottom";
                      animations:^{
                          toast.alpha = 1.0;
                      } completion:^(BOOL finished) {
-                         NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:duration target:self selector:@selector(jk_toastTimerDidFinish:) userInfo:toast repeats:NO];
+                         NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:duration target:self selector:@selector(fq_toastTimerDidFinish:) userInfo:toast repeats:NO];
                          // associate the timer with the toast view
                          objc_setAssociatedObject (toast, &FQToastTimerKey, timer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
                          objc_setAssociatedObject (toast, &FQToastTapCallbackKey, tapCallback, OBJC_ASSOCIATION_RETAIN_NONATOMIC);

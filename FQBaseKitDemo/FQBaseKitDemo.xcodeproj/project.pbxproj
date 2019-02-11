@@ -138,6 +138,10 @@
 		04F0165A21F6B60600BEDF3C /* FQBaseKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04E119DC21FC5F6B0003776C /* FQImageCacheManager.h */,
+				04E119DD21FC5F6B0003776C /* FQImageCacheManager.m */,
+				04E119DF21FC5FF60003776C /* UITabBarItem+FQImageWebCache.h */,
+				04E119E021FC5FF60003776C /* UITabBarItem+FQImageWebCache.m */,
 				04F0165B21F6B60600BEDF3C /* AppDelegate.h */,
 				04F0165C21F6B60600BEDF3C /* AppDelegate.m */,
 				04F0165D21F6B60600BEDF3C /* Assets.xcassets */,
@@ -219,8 +223,6 @@
 			isa = PBXGroup;
 			children = (
 				04F0168A21F6EF3400BEDF3C /* FQBaseUIKit.h */,
-				04E119DC21FC5F6B0003776C /* FQImageCacheManager.h */,
-				04E119DD21FC5F6B0003776C /* FQImageCacheManager.m */,
 				04F0168B21F6EF3400BEDF3C /* UIBarButtonItem+FQBarButtonBadge.h */,
 				04F0168C21F6EF3400BEDF3C /* UIBarButtonItem+FQBarButtonBadge.m */,
 				04F0168D21F6EF3400BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.h */,
@@ -247,8 +249,6 @@
 				04C4B3DE21FAEA840028408E /* UIImage+FQOrientation.m */,
 				04C4B3E021FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.h */,
 				04C4B3E121FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.m */,
-				04E119DF21FC5FF60003776C /* UITabBarItem+FQImageWebCache.h */,
-				04E119E021FC5FF60003776C /* UITabBarItem+FQImageWebCache.m */,
 			);
 			path = FQBaseUIKit;
 			sourceTree = "<group>";

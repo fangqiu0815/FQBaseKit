@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
-#import "FQImageCacheManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

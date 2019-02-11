@@ -46,6 +46,7 @@ Pod::Spec.new do |s|
      s.subspec 'FQBaseUIKit' do |s|
     	s.source_files       = 'FQBaseKit/FQBaseUIKit/*.{h,m}'
 	s.frameworks = 'Foundation','UIKit'
+
      end
 
      s.subspec 'FQBaseUtil' do |s|

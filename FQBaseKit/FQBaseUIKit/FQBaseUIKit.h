@@ -23,6 +23,7 @@
 #import "UIImage+FQImageExtension.h"
 #import "UIWebView+FQWebViewJavaScript.h"
 #import "UITabBarItem+FQImageWebCache.h"
+#import "FQImageCacheManager.h"
 
 
 #endif /* FQBaseUIKit_h */

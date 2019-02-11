@@ -211,8 +211,6 @@
 			children = (
 				04F0168721F6EF3400BEDF3C /* FQBaseTool.h */,
 				04F0168821F6EF3400BEDF3C /* FQBaseTool.m */,
-				04E119DC21FC5F6B0003776C /* FQImageCacheManager.h */,
-				04E119DD21FC5F6B0003776C /* FQImageCacheManager.m */,
 			);
 			path = FQBaseTool;
 			sourceTree = "<group>";
@@ -221,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				04F0168A21F6EF3400BEDF3C /* FQBaseUIKit.h */,
+				04E119DC21FC5F6B0003776C /* FQImageCacheManager.h */,
+				04E119DD21FC5F6B0003776C /* FQImageCacheManager.m */,
 				04F0168B21F6EF3400BEDF3C /* UIBarButtonItem+FQBarButtonBadge.h */,
 				04F0168C21F6EF3400BEDF3C /* UIBarButtonItem+FQBarButtonBadge.m */,
 				04F0168D21F6EF3400BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.h */,

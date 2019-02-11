@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FQBaseKit"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "FQBaseKit a collection of useful Objective-C Categories"
   s.description  = " FQBaseKit a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,QuartzCore "
 
@@ -19,9 +19,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/fangqiu1991/FQBaseKit.git", :tag => "#{s.version}" }
-
-  s.source_files  = "FQBaseKit/*/*.{h,m}" 
-  
+  s.public_header_files = 'FQBaseKit/FQBaseHeader.h'
+  s.source_files  = 'FQBaseKit/FQBaseHeader.h' 
 	
      s.subspec 'FQBaseFoundation' do |s|
     	s.source_files       = 'FQBaseKit/FQBaseFoundation/*.{h,m}'

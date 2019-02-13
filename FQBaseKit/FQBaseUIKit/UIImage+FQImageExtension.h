@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef void (^FQUIImageSizeRequestCompleted) (NSURL* imgURL, CGSize size);
+//typedef void (^FQUIImageSizeRequestCompleted) (NSURL* imgURL, CGSize size);
 
 @interface UIImage (FQImageExtension)
 
@@ -106,13 +106,13 @@ typedef void (^FQUIImageSizeRequestCompleted) (NSURL* imgURL, CGSize size);
  */
 + (UIImage*)fq_mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage;
 
-/**
- *  @brief 获取远程图片的大小
- *
- *  @param imgURL     图片url
- *  @param completion 完成回调
- */
-+ (void)fq_requestSizeNoHeader:(NSURL*)imgURL completion:(FQUIImageSizeRequestCompleted)completion;
+///**
+// *  @brief 获取远程图片的大小
+// *
+// *  @param imgURL     图片url
+// *  @param completion 完成回调
+// */
+//+ (void)fq_requestSizeNoHeader:(NSURL*)imgURL completion:(FQUIImageSizeRequestCompleted)completion;
 /**
  *  @brief  从header中获取远程图片的大小 (服务器必须支持)
  *

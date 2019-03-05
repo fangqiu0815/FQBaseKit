@@ -12,6 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 // 分类的特点：1.声明的属性不会生成成员变量，但是可以有setter和getter方法
 
 @interface UIView (FQFrameCategory)
+
+@property (nonatomic, readwrite, assign) CGFloat fq_left;
+
+@property (nonatomic, readwrite, assign) CGFloat fq_top;
+
+@property (nonatomic, readwrite, assign) CGFloat fq_right;
+
+@property (nonatomic, readwrite, assign) CGFloat fq_bottom;
+
 // 宽度
 @property CGFloat fq_width;
 // 高度
@@ -21,8 +30,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property CGFloat fq_centerX;
 @property CGFloat fq_centerY;
 @property CGSize fq_size;
-@property CGFloat fq_bottom;
-@property (nonatomic, assign, readonly) CGFloat fq_right;
 
 @property (nonatomic) CGPoint fq_origin;      ///< Shortcut for frame.origin.
 

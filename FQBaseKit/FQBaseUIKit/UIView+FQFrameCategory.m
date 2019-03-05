@@ -93,16 +93,6 @@
     return self.frame.size;
 }
 
-- (CGFloat)fq_bottom{
-    
-    return CGRectGetMaxY(self.frame);
-}
-
-- (void)setFq_bottom:(CGFloat)fq_bottom{
-    
-    self.fq_y = fq_bottom - self.fq_height;
-}
-
 
 - (CGPoint)fq_origin {
     return self.frame.origin;
@@ -114,9 +104,53 @@
     self.frame = frame;
 }
 
-- (CGFloat)fq_right {
-    return CGRectGetMaxX(self.frame);
+- (void)setFq_top:(CGFloat)fq_top
+{
+    CGRect frame = self.frame;
+    frame.origin.y = fq_top;
+    self.frame = frame;
 }
+- (CGFloat)fq_top
+{
+    return self.frame.origin.y;
+}
+
+
+- (void)setFq_left:(CGFloat)fq_left
+{
+    CGRect frame = self.frame;
+    frame.origin.x = fq_left;
+    self.frame = frame;
+}
+- (CGFloat)fq_left
+{
+    return self.frame.origin.x;
+}
+
+
+- (void)setFq_bottom:(CGFloat)fq_bottom
+{
+    CGRect frame = self.frame;
+    frame.origin.y = fq_bottom - frame.size.height;
+    self.frame = frame;
+}
+- (CGFloat)fq_bottom{
+    return self.frame.origin.y + self.frame.size.height;
+}
+
+
+- (void)setFq_right:(CGFloat)fq_right
+{
+    CGRect frame = self.frame;
+    frame.origin.x = fq_right - frame.size.width;
+    self.frame = frame;
+}
+
+- (CGFloat)fq_right{
+    return self.frame.origin.x + self.frame.size.width;
+}
+
+
 
 NSString * const _recognizerScale = @"_recognizerScale";
 

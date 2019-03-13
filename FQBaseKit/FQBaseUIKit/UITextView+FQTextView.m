@@ -11,8 +11,8 @@
 
 @interface UITextView ()
 
-@property (nonatomic,strong) UILabel *placeholderLabel;//占位符
-@property (nonatomic,strong) UILabel *wordCountLabel;//计算字数
+@property (nonatomic,strong) UILabel *fq_placeholderLabel;//占位符
+@property (nonatomic,strong) UILabel *fq_wordCountLabel;//计算字数
 
 @end
 
@@ -20,6 +20,7 @@
 
 static NSString *PLACEHOLDLABEL = @"placelabel";
 static NSString *PLACEHOLD = @"placehold";
+static NSString *PLACEHOLDCOLOR = @"placeholdcolor";
 static NSString *WORDCOUNTLABEL = @"wordcount";
 static const void *limitLengthKey = &limitLengthKey;
 static const void *limitLinesKey = &limitLinesKey;
@@ -27,83 +28,115 @@ static const void *limitLinesKey = &limitLinesKey;
 
 #pragma mark -- set/get...
 
--(void)setPlaceholderLabel:(UILabel *)placeholderLabel {
-    
-    objc_setAssociatedObject(self, &PLACEHOLDLABEL, placeholderLabel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setFq_placeHolderColor:(UIColor *)fq_placeHolderColor
+{
+    objc_setAssociatedObject(self, &PLACEHOLDCOLOR, fq_placeHolderColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [self setPlaceHolderColor:fq_placeHolderColor];
 }
 
-- (UILabel *)placeholderLabel {
+- (void)setPlaceHolderColor:(UIColor *)placeHolderColor
+{
+    self.fq_placeholderLabel.textColor = placeHolderColor;
+}
+
+- (UIColor *)fq_placeHolderColor
+{
+    return objc_getAssociatedObject(self, &PLACEHOLDCOLOR);
+}
+
+- (void)setFq_placeholderLabel:(UILabel *)fq_placeholderLabel
+{
+    objc_setAssociatedObject(self, &PLACEHOLDLABEL, fq_placeholderLabel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (UILabel *)fq_placeholderLabel {
     
     return objc_getAssociatedObject(self, &PLACEHOLDLABEL);
     
 }
 
-- (void)setPlaceholder:(NSString *)placeholder {
-    
-    
-    objc_setAssociatedObject(self, &PLACEHOLD, placeholder, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    [self setPlaceHolderLabel:placeholder];
+- (void)setFq_placeholder:(NSString *)fq_placeholder
+{
+    objc_setAssociatedObject(self, &PLACEHOLD, fq_placeholder, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [self setPlaceHolderLabel:fq_placeholder];
 }
 
-- (NSString *)placeholder {
+- (NSString *)fq_placeholder {
     
     return objc_getAssociatedObject(self, &PLACEHOLD);
 }
 
 
-- (UILabel *)wordCountLabel {
+- (UILabel *)fq_wordCountLabel {
     
     return objc_getAssociatedObject(self, &WORDCOUNTLABEL);
     
 }
-- (void)setWordCountLabel:(UILabel *)wordCountLabel {
-    
-    objc_setAssociatedObject(self, &WORDCOUNTLABEL, wordCountLabel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    
+
+- (void)setFq_wordCountLabel:(UILabel *)fq_wordCountLabel
+{
+    objc_setAssociatedObject(self, &WORDCOUNTLABEL, fq_wordCountLabel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (NSNumber *)limitLength {
+
+- (NSNumber *)fq_limitLength {
     
     return objc_getAssociatedObject(self, limitLengthKey);
 }
 
-- (void)setLimitLength:(NSNumber *)limitLength {
-    objc_setAssociatedObject(self, limitLengthKey, limitLength, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [self addLimitLengthObserver:[limitLength intValue]];
-    [self setWordcountLable:limitLength];
-    
+- (void)setFq_limitLength:(NSNumber *)fq_limitLength
+{
+    objc_setAssociatedObject(self, limitLengthKey, fq_limitLength, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    [self addLimitLengthObserver:[fq_limitLength intValue]];
+    [self setWordcountLable:fq_limitLength];
 }
-- (NSNumber *)limitLines {
+
+- (NSNumber *)fq_limitLines {
     return objc_getAssociatedObject(self, limitLinesKey);
 }
-- (void)setLimitLines:(NSNumber *)limitLines {
-    objc_setAssociatedObject(self, limitLinesKey, limitLines, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [self addLimitLengthObserver:[limitLines intValue]];
+
+- (void)setFq_limitLines:(NSNumber *)fq_limitLines
+{
+    objc_setAssociatedObject(self, limitLinesKey, fq_limitLines, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    [self addLimitLengthObserver:[fq_limitLines intValue]];
 }
+
 
 #pragma mark -- 配置占位符标签
 
 - (void)setPlaceHolderLabel:(NSString *)placeholder {
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewChanged:) name:UITextViewTextDidChangeNotification object:self];
-    if (self.placeholderLabel) {
-        [self.placeholderLabel removeFromSuperview];
+    if (self.fq_placeholderLabel) {
+        [self.fq_placeholderLabel removeFromSuperview];
     }
     /*
      *  占位字符
      */
-    self.placeholderLabel = [[UILabel alloc] init];
-    self.placeholderLabel.font = [UIFont systemFontOfSize:13.];
-    self.placeholderLabel.text = placeholder;
-    self.placeholderLabel.numberOfLines = 0;
-    self.placeholderLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    self.placeholderLabel.textColor = [UIColor lightGrayColor];
-    CGRect rect = [placeholder boundingRectWithSize:CGSizeMake(CGRectGetWidth(self.frame)-7, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:13.]} context:nil];
-    self.placeholderLabel.frame = CGRectMake(7, 7, rect.size.width, rect.size.height);
-    [self addSubview:self.placeholderLabel];
-    self.placeholderLabel.hidden = self.text.length > 0 ? YES : NO;
-    self.wordCountLabel.text = [NSString stringWithFormat:@"%lu/%@",(unsigned long)self.text.length,self.limitLength];
+    self.fq_placeholderLabel = [[UILabel alloc] init];
+    self.fq_placeholderLabel.font = self.font?self.font:self.cacutDefaultFont;
+    self.fq_placeholderLabel.text = placeholder;
+    self.fq_placeholderLabel.textAlignment = self.textAlignment;
+    self.fq_placeholderLabel.numberOfLines = 0;
+    self.fq_placeholderLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    self.fq_placeholderLabel.textColor = [UIColor lightGrayColor];
+    CGRect rect = [placeholder boundingRectWithSize:CGSizeMake(CGRectGetWidth(self.frame)+20, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: self.font?self.font:self.cacutDefaultFont} context:nil];
+    self.fq_placeholderLabel.frame = CGRectMake(7, 8, rect.size.width, rect.size.height);
+    [self addSubview:self.fq_placeholderLabel];
+    self.fq_placeholderLabel.hidden = self.text.length > 0 ? YES : NO;
+    self.fq_wordCountLabel.text = [NSString stringWithFormat:@"%lu/%@",(unsigned long)self.text.length,self.fq_limitLength];
     
+}
+
+- (UIFont *)cacutDefaultFont{
+    static UIFont *font = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        UITextView *textview = [[UITextView alloc] init];
+        textview.text = @" ";
+        font = textview.font;
+    });
+    return font;
 }
 
 //- (void)setAttributedPlaceholder:(NSAttributedString *)attributedPlaceholder {
@@ -114,21 +147,21 @@ static const void *limitLinesKey = &limitLinesKey;
 #pragma mark -- 配置字数限制标签
 
 - (void)setWordcountLable:(NSNumber *)limitLength {
-    if (self.wordCountLabel) {
-        [self.wordCountLabel removeFromSuperview];
+    if (self.fq_wordCountLabel) {
+        [self.fq_wordCountLabel removeFromSuperview];
     }
     /*
      *  字数限制
      */
-    self.wordCountLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.frame) - 65, CGRectGetHeight(self.frame) - 20, 60, 20)];
-    self.wordCountLabel.textAlignment = NSTextAlignmentRight;
-    self.wordCountLabel.textColor = [UIColor lightGrayColor];
-    self.wordCountLabel.font = [UIFont systemFontOfSize:13.];
+    self.fq_wordCountLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.frame) - 65, CGRectGetHeight(self.frame) - 20, 60, 20)];
+    self.fq_wordCountLabel.textAlignment = NSTextAlignmentRight;
+    self.fq_wordCountLabel.textColor = [UIColor lightGrayColor];
+    self.fq_wordCountLabel.font = [UIFont systemFontOfSize:13.];
     if (self.text.length > [limitLength integerValue]) {
-        self.text = [self.text substringToIndex:[self.limitLength intValue]];
+        self.text = [self.text substringToIndex:[self.fq_limitLength intValue]];
     }
-    self.wordCountLabel.text = [NSString stringWithFormat:@"%lu/%@",(unsigned long)self.text.length,limitLength];
-    [self addSubview:self.wordCountLabel];
+    self.fq_wordCountLabel.text = [NSString stringWithFormat:@"%lu/%@",(unsigned long)self.text.length,limitLength];
+    [self addSubview:self.fq_wordCountLabel];
     
 }
 
@@ -140,15 +173,15 @@ static const void *limitLinesKey = &limitLinesKey;
 #pragma mark -- 限制输入的位数
 - (void)limitLengthEvent {
     
-    if (self.limitLength) {//字数限制
-        if ([self.text length] > [self.limitLength intValue]) {
-            self.text = [self.text substringToIndex:[self.limitLength intValue]];
+    if (self.fq_limitLength) {//字数限制
+        if ([self.text length] > [self.fq_limitLength intValue]) {
+            self.text = [self.text substringToIndex:[self.fq_limitLength intValue]];
             NSLog(@"Maximum number of words");
         }
     }else {
-        if (self.limitLines) {//行数限制
+        if (self.fq_limitLines) {//行数限制
             CGSize size = [self getStringPlaceSize:self.text textFont:self.font bundingSize:CGSizeMake(self.contentSize.width-10, CGFLOAT_MAX)];
-            if (size.height > self.font.lineHeight * [self.limitLines intValue]) {
+            if (size.height > self.font.lineHeight * [self.fq_limitLines intValue]) {
                 self.text = [self.text substringToIndex:self.text.length - 1];
                 NSLog(@"Maximum number of lines");
             }
@@ -160,21 +193,21 @@ static const void *limitLinesKey = &limitLinesKey;
 #pragma mark -- NSNotification
 
 - (void)textViewChanged:(NSNotification *)notification {
-    if (self.placeholder) {
-        self.placeholderLabel.hidden = YES;
+    if (self.fq_placeholder) {
+        self.fq_placeholderLabel.hidden = YES;
         
         if (self.text.length == 0) {
             
-            self.placeholderLabel.hidden = NO;
+            self.fq_placeholderLabel.hidden = NO;
         }
     }
-    if (self.limitLength) {
+    if (self.fq_limitLength) {
         
         NSInteger wordCount = self.text.length;
-        if (wordCount > [self.limitLength integerValue]) {
-            wordCount = [self.limitLength integerValue];
+        if (wordCount > [self.fq_limitLength integerValue]) {
+            wordCount = [self.fq_limitLength integerValue];
         }
-        self.wordCountLabel.text = [NSString stringWithFormat:@"%ld/%@",(long)wordCount,self.limitLength];
+        self.fq_wordCountLabel.text = [NSString stringWithFormat:@"%ld/%@",(long)wordCount,self.fq_limitLength];
     }
     
 }
@@ -194,15 +227,15 @@ static const void *limitLinesKey = &limitLinesKey;
 }
 - (void)layoutSubviews {
     [super layoutSubviews];
-    if (self.limitLength && self.wordCountLabel) {
+    if (self.fq_limitLength && self.fq_wordCountLabel) {
         /*
          *  避免外部使用了约束 这里再次更新frame
          */
-        self.wordCountLabel.frame = CGRectMake(CGRectGetWidth(self.frame) - 65, CGRectGetHeight(self.frame) - 20, 60, 20);
+        self.fq_wordCountLabel.frame = CGRectMake(CGRectGetWidth(self.frame) - 65, CGRectGetHeight(self.frame) - 20, 60, 20);
     }
-    if (self.placeholder && self.placeholderLabel) {
-        CGRect rect = [self.placeholder boundingRectWithSize:CGSizeMake(CGRectGetWidth(self.frame)-7, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:13.]} context:nil];
-        self.placeholderLabel.frame = CGRectMake(7, 7, rect.size.width, rect.size.height);
+    if (self.fq_placeholder && self.fq_placeholderLabel) {
+        CGRect rect = [self.fq_placeholder boundingRectWithSize:CGSizeMake(CGRectGetWidth(self.frame)+20, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: self.font} context:nil];
+        self.fq_placeholderLabel.frame = CGRectMake(7, 8, rect.size.width, rect.size.height);
     }
 }
 

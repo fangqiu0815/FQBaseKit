@@ -17,11 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param : limitLength 需要限制的字数  优先级高于lines
  * @param : limitLines  需要限制的行数
  */
-@property (nonatomic, strong) NSString *placeholder;
+@property (nonatomic, strong) NSString *fq_placeholder;
 //@property (nonatomic, strong) NSAttributedString *attributedPlaceholder;
-
-@property (nonatomic,  copy) NSNumber *limitLength;
-@property (nonatomic,  copy) NSNumber *limitLines;
+/**
+ *  placeHolder颜色
+ */
+@property (nonatomic, strong) UIColor *fq_placeHolderColor;
+@property (nonatomic,  copy) NSNumber *fq_limitLength;
+@property (nonatomic,  copy) NSNumber *fq_limitLines;
 
 /* ******特殊说明。如果你想对textView.text直接赋值*******
  *       请务必在对placehoulder和limitLength之前进行

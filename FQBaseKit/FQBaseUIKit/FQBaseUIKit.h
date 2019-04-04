@@ -18,7 +18,6 @@
 #import "UITabBar+FQBadge.h"
 #import "UIButton+FQBadge.h"
 #import "UIButton+FQButtonExtension.h"
-#import "UITextView+FQTextView.h"
 #import "UIImage+FQOrientation.h"
 #import "UIImage+FQImageExtension.h"
 #import "UIWebView+FQWebViewJavaScript.h"

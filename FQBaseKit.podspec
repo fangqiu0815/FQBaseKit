@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FQBaseKit"
-  s.version      = "0.1.9"
+  s.version      = "0.1.10"
   s.summary      = "FQBaseKit a collection of useful Objective-C Categories"
   s.description  = " FQBaseKit a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,QuartzCore "
 

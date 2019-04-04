@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
+#import "FQTextView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

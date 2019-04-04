@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		04C4B3D321FAE0C10028408E /* UIButton+FQBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3D221FAE0C10028408E /* UIButton+FQBadge.m */; };
 		04C4B3D621FAE1910028408E /* UITabBar+FQBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3D521FAE1910028408E /* UITabBar+FQBadge.m */; };
-		04C4B3D921FAE2F90028408E /* UITextView+FQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3D821FAE2F90028408E /* UITextView+FQTextView.m */; };
 		04C4B3DC21FAE7030028408E /* UIImage+FQImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3DB21FAE7030028408E /* UIImage+FQImageExtension.m */; };
 		04C4B3DF21FAEA840028408E /* UIImage+FQOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3DE21FAEA840028408E /* UIImage+FQOrientation.m */; };
 		04C4B3E221FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3E121FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.m */; };
@@ -38,6 +37,7 @@
 		04F016A021F6EF3400BEDF3C /* UIView+FQToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0169421F6EF3400BEDF3C /* UIView+FQToast.m */; };
 		04F016A421F7013600BEDF3C /* UIColor+FQCustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F016A321F7013600BEDF3C /* UIColor+FQCustomColor.m */; };
 		04F016A721F704BE00BEDF3C /* FQDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F016A621F704BE00BEDF3C /* FQDeviceHelper.m */; };
+		04FDEB26225592B800558DC6 /* FQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FDEB25225592B800558DC6 /* FQTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +46,6 @@
 		04C4B3D221FAE0C10028408E /* UIButton+FQBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FQBadge.m"; sourceTree = "<group>"; };
 		04C4B3D421FAE1910028408E /* UITabBar+FQBadge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+FQBadge.h"; sourceTree = "<group>"; };
 		04C4B3D521FAE1910028408E /* UITabBar+FQBadge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FQBadge.m"; sourceTree = "<group>"; };
-		04C4B3D721FAE2F90028408E /* UITextView+FQTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+FQTextView.h"; sourceTree = "<group>"; };
-		04C4B3D821FAE2F90028408E /* UITextView+FQTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+FQTextView.m"; sourceTree = "<group>"; };
 		04C4B3DA21FAE7030028408E /* UIImage+FQImageExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FQImageExtension.h"; sourceTree = "<group>"; };
 		04C4B3DB21FAE7030028408E /* UIImage+FQImageExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FQImageExtension.m"; sourceTree = "<group>"; };
 		04C4B3DD21FAEA840028408E /* UIImage+FQOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FQOrientation.h"; sourceTree = "<group>"; };
@@ -105,6 +103,8 @@
 		04F016A321F7013600BEDF3C /* UIColor+FQCustomColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FQCustomColor.m"; sourceTree = "<group>"; };
 		04F016A521F704BE00BEDF3C /* FQDeviceHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FQDeviceHelper.h; sourceTree = "<group>"; };
 		04F016A621F704BE00BEDF3C /* FQDeviceHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FQDeviceHelper.m; sourceTree = "<group>"; };
+		04FDEB24225592B800558DC6 /* FQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQTextView.h; sourceTree = "<group>"; };
+		04FDEB25225592B800558DC6 /* FQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +215,8 @@
 			children = (
 				04F0168721F6EF3400BEDF3C /* FQBaseTool.h */,
 				04F0168821F6EF3400BEDF3C /* FQBaseTool.m */,
+				04FDEB24225592B800558DC6 /* FQTextView.h */,
+				04FDEB25225592B800558DC6 /* FQTextView.m */,
 			);
 			path = FQBaseTool;
 			sourceTree = "<group>";
@@ -241,8 +243,6 @@
 				04C4B3E421FAF16E0028408E /* UIButton+FQButtonExtension.m */,
 				04C4B3D421FAE1910028408E /* UITabBar+FQBadge.h */,
 				04C4B3D521FAE1910028408E /* UITabBar+FQBadge.m */,
-				04C4B3D721FAE2F90028408E /* UITextView+FQTextView.h */,
-				04C4B3D821FAE2F90028408E /* UITextView+FQTextView.m */,
 				04C4B3DA21FAE7030028408E /* UIImage+FQImageExtension.h */,
 				04C4B3DB21FAE7030028408E /* UIImage+FQImageExtension.m */,
 				04C4B3DD21FAEA840028408E /* UIImage+FQOrientation.h */,
@@ -343,13 +343,13 @@
 				04C4B3E221FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.m in Sources */,
 				04C4B3EB21FAF3DA0028408E /* NSNumber+FQNumberExtension.m in Sources */,
 				04F0169721F6EF3400BEDF3C /* NSArray+FQErrorHandle.m in Sources */,
-				04C4B3D921FAE2F90028408E /* UITextView+FQTextView.m in Sources */,
 				04E119E121FC5FF60003776C /* UITabBarItem+FQImageWebCache.m in Sources */,
 				04F016A721F704BE00BEDF3C /* FQDeviceHelper.m in Sources */,
 				04C4B3EE21FAF4BF0028408E /* NSObject+FQAppInfo.m in Sources */,
 				04C4B3DC21FAE7030028408E /* UIImage+FQImageExtension.m in Sources */,
 				04F0169E21F6EF3400BEDF3C /* UIView+FQConstraints.m in Sources */,
 				04F0169C21F6EF3400BEDF3C /* UIBarButtonItem+FQBarButtonBadge.m in Sources */,
+				04FDEB26225592B800558DC6 /* FQTextView.m in Sources */,
 				04C4B3DF21FAEA840028408E /* UIImage+FQOrientation.m in Sources */,
 				04F0167021F6B60600BEDF3C /* AppDelegate.m in Sources */,
 				04E119DE21FC5F6B0003776C /* FQImageCacheManager.m in Sources */,

@@ -20,15 +20,20 @@
 - (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+        self.layoutManager.allowsNonContiguousLayout = NO;
+        [self scrollRangeToVisible:NSMakeRange(0, self.text.length)];
         [self addObserver];
         [self setView];
     }
+    
     return self;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
+        self.layoutManager.allowsNonContiguousLayout = NO;
+        [self scrollRangeToVisible:NSMakeRange(0, self.text.length)];
         [self addObserver];
         [self setView];
     }

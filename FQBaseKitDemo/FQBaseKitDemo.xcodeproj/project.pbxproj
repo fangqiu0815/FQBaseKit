@@ -11,7 +11,6 @@
 		04C4B3D621FAE1910028408E /* UITabBar+FQBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3D521FAE1910028408E /* UITabBar+FQBadge.m */; };
 		04C4B3DC21FAE7030028408E /* UIImage+FQImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3DB21FAE7030028408E /* UIImage+FQImageExtension.m */; };
 		04C4B3DF21FAEA840028408E /* UIImage+FQOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3DE21FAEA840028408E /* UIImage+FQOrientation.m */; };
-		04C4B3E221FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3E121FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.m */; };
 		04C4B3E521FAF16E0028408E /* UIButton+FQButtonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3E421FAF16E0028408E /* UIButton+FQButtonExtension.m */; };
 		04C4B3E821FAF3510028408E /* NSHTTPCookieStorage+FQHTTPCookiesExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3E721FAF3510028408E /* NSHTTPCookieStorage+FQHTTPCookiesExtension.m */; };
 		04C4B3EB21FAF3DA0028408E /* NSNumber+FQNumberExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C4B3EA21FAF3DA0028408E /* NSNumber+FQNumberExtension.m */; };
@@ -50,8 +49,6 @@
 		04C4B3DB21FAE7030028408E /* UIImage+FQImageExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FQImageExtension.m"; sourceTree = "<group>"; };
 		04C4B3DD21FAEA840028408E /* UIImage+FQOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FQOrientation.h"; sourceTree = "<group>"; };
 		04C4B3DE21FAEA840028408E /* UIImage+FQOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FQOrientation.m"; sourceTree = "<group>"; };
-		04C4B3E021FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+FQWebViewJavaScript.h"; sourceTree = "<group>"; };
-		04C4B3E121FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+FQWebViewJavaScript.m"; sourceTree = "<group>"; };
 		04C4B3E321FAF16E0028408E /* UIButton+FQButtonExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FQButtonExtension.h"; sourceTree = "<group>"; };
 		04C4B3E421FAF16E0028408E /* UIButton+FQButtonExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FQButtonExtension.m"; sourceTree = "<group>"; };
 		04C4B3E621FAF3510028408E /* NSHTTPCookieStorage+FQHTTPCookiesExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSHTTPCookieStorage+FQHTTPCookiesExtension.h"; sourceTree = "<group>"; };
@@ -138,6 +135,8 @@
 		04F0165A21F6B60600BEDF3C /* FQBaseKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04C4B3E621FAF3510028408E /* NSHTTPCookieStorage+FQHTTPCookiesExtension.h */,
+				04C4B3E721FAF3510028408E /* NSHTTPCookieStorage+FQHTTPCookiesExtension.m */,
 				04E119DC21FC5F6B0003776C /* FQImageCacheManager.h */,
 				04E119DD21FC5F6B0003776C /* FQImageCacheManager.m */,
 				04E119DF21FC5FF60003776C /* UITabBarItem+FQImageWebCache.h */,
@@ -182,8 +181,6 @@
 				04F0167F21F6EF3400BEDF3C /* NSDictionary+FQSafeAccess.m */,
 				04F0168021F6EF3400BEDF3C /* NSString+FQStringCategory.h */,
 				04F0168121F6EF3400BEDF3C /* NSString+FQStringCategory.m */,
-				04C4B3E621FAF3510028408E /* NSHTTPCookieStorage+FQHTTPCookiesExtension.h */,
-				04C4B3E721FAF3510028408E /* NSHTTPCookieStorage+FQHTTPCookiesExtension.m */,
 				04C4B3E921FAF3DA0028408E /* NSNumber+FQNumberExtension.h */,
 				04C4B3EA21FAF3DA0028408E /* NSNumber+FQNumberExtension.m */,
 				04C4B3EC21FAF4BF0028408E /* NSObject+FQAppInfo.h */,
@@ -247,8 +244,6 @@
 				04C4B3DB21FAE7030028408E /* UIImage+FQImageExtension.m */,
 				04C4B3DD21FAEA840028408E /* UIImage+FQOrientation.h */,
 				04C4B3DE21FAEA840028408E /* UIImage+FQOrientation.m */,
-				04C4B3E021FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.h */,
-				04C4B3E121FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.m */,
 			);
 			path = FQBaseUIKit;
 			sourceTree = "<group>";
@@ -340,7 +335,6 @@
 				04F0169D21F6EF3400BEDF3C /* UIBarButtonItem+FQBarButtonItemCategory.m in Sources */,
 				04F016A421F7013600BEDF3C /* UIColor+FQCustomColor.m in Sources */,
 				04F0169821F6EF3400BEDF3C /* NSBundle+FQAppIcon.m in Sources */,
-				04C4B3E221FAEFBA0028408E /* UIWebView+FQWebViewJavaScript.m in Sources */,
 				04C4B3EB21FAF3DA0028408E /* NSNumber+FQNumberExtension.m in Sources */,
 				04F0169721F6EF3400BEDF3C /* NSArray+FQErrorHandle.m in Sources */,
 				04E119E121FC5FF60003776C /* UITabBarItem+FQImageWebCache.m in Sources */,

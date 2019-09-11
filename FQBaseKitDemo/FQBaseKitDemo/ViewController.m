@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FQBaseHeader.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    FQTextView *textview = [[FQTextView alloc]initWithFrame:CGRectMake(50, 100, self.view.bounds.size.width - 100, 50)];
+    textview.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    textview.layer.borderWidth = 1;
+    [self.view addSubview:textview];
 }
 
 

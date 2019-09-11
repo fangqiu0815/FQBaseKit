@@ -449,7 +449,7 @@ static CGFloat const kPWMinimumLength = 6;
     return [addresses count] ? addresses : nil;
 }
 
--(BOOL)isBlankString:(NSString *)string {
+- (BOOL)isBlankString:(NSString *)string {
     if (string == nil || string == NULL) {
         return YES;
     }

@@ -205,6 +205,7 @@
 
 ///获取完整的设备型号
 + (NSString *)fq_getFullDeviceNameByPlatform:(NSString *)platform {
+    // iPhone
     if ([platform isEqualToString:@"iPhone1,1"])    return @"iPhone 1G";
     if ([platform isEqualToString:@"iPhone1,2"])    return @"iPhone 3G";
     if ([platform isEqualToString:@"iPhone2,1"])    return @"iPhone 3GS";
@@ -236,15 +237,17 @@
     if ([platform isEqualToString:@"iPhone11,4"])   return @"iPhone XS Max";
     if ([platform isEqualToString:@"iPhone11,6"])   return @"iPhone XS Max CN";
     if ([platform isEqualToString:@"iPhone11,8"])   return @"iPhone XR";
-    
-    
+    if ([platform isEqualToString:@"iPhone12,1"])   return @"iPhone 11";
+    if ([platform isEqualToString:@"iPhone12,3"])   return @"iPhone 11 Pro";
+    if ([platform isEqualToString:@"iPhone12,5"])   return @"iPhone 11 Pro Max";
+    // Old iPod
     if ([platform isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
     if ([platform isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
     if ([platform isEqualToString:@"iPod3,1"])      return @"iPod Touch 3G";
     if ([platform isEqualToString:@"iPod4,1"])      return @"iPod Touch 4G";
     if ([platform isEqualToString:@"iPod5,1"])      return @"iPod Touch 5G";
     if ([platform isEqualToString:@"iPod7,1"])      return @"iPod Touch 6G";
-    
+    // iPad
     if ([platform isEqualToString:@"iPad1,1"])      return @"iPad";
     if ([platform isEqualToString:@"iPad2,1"])      return @"iPad 2 (WiFi)";
     if ([platform isEqualToString:@"iPad2,2"])      return @"iPad 2 (GSM)";
@@ -282,7 +285,33 @@
     if ([platform isEqualToString:@"iPad7,2"])      return @"iPad Pro 12.9-inch (Cellular)";
     if ([platform isEqualToString:@"iPad7,3"])      return @"iPad Pro 10.5-inch (WiFi)";
     if ([platform isEqualToString:@"iPad7,4"])      return @"iPad Pro 10.5-inch (Cellular)";
-    
+    if ([platform isEqualToString:@"iPad11,3"] ||
+        [platform isEqualToString:@"iPad11,4"])      return @"iPad Air 3";
+    if ([platform isEqualToString:@"iPad11,1"] ||
+        [platform isEqualToString:@"iPad11,2"])      return @"iPad Mini 5";
+    // iPod
+    if ([platform isEqualToString:@"iPod1,1"]) {
+        return @"iPod touch";
+    }
+    if ([platform isEqualToString:@"iPod2,1"]) {
+        return @"iPod touch (2nd gen)";
+    }
+    if ([platform isEqualToString:@"iPod3,1"]) {
+        return @"iPod touch (3rd gen)";
+    }
+    if ([platform isEqualToString:@"iPod4,1"]) {
+        return @"iPod touch (4th gen)";
+    }
+    if ([platform isEqualToString:@"iPod5,1"]) {
+        return @"iPod touch (5th gen)";
+    }
+    if ([platform isEqualToString:@"iPod7,1"]) {
+        return @"iPod touch (6th gen)";
+    }
+    if ([platform isEqualToString:@"iPod9,1"]) {
+        return @"iPod touch (7th generation)";
+    }
+    // Xcode iOS Simulator
     if ([platform isEqualToString:@"i386"])         return [UIDevice currentDevice].model;
     if ([platform isEqualToString:@"x86_64"])       return [UIDevice currentDevice].model;
     
